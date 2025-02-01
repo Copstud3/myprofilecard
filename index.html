@@ -1,45 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profile Card</title>
-    <link rel="stylesheet" href="/css/styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div class="profile-card">
-        <div class="profile-picture">
-            <img src="/img/my-image.jpg" alt="Profile Picture" data-testid="profilePicture">
+      <div class="profile-picture">
+        <img
+          src="/img/my-image.jpg"
+          alt="Profile Picture"
+          data-testid="profilePicture"
+        />
+      </div>
+      <div class="profile-info">
+        <h1 class="full-name" data-testid="fullName">
+          Christopher Chukwuebuka
+        </h1>
+        <h2 class="job-title" data-testid="jobTitle">
+          Professional Software Engineer
+        </h2>
+        <p class="short-bio" data-testid="shortBio">
+          I am a passionate front-end software engineer with a strong background
+          in developing dynamic, userfriendly web applications and a deep
+          understanding of modern web technologies. Proficient in HTML, CSS,
+          JavaScript, and frameworks such as React, with hands-on experience in
+          creating responsive, visually appealing, and fully functional user
+          interfaces. I can collaborate within agile teams to deliver
+          high-quality software solutions that align with client requirements. I
+          possess strong problem-solving abilities, attention to detail, and a
+          passion for staying updated with the latest industry trends to enhance
+          the user experience and streamline development processes. I am also
+          committed to leveraging technical skills and creativity to contribute
+          to innovative and impactful web projects.
+        </p>
+        <div class="location" data-testid="currentLocation">
+          📍 Lagos, Nigeria
         </div>
-        <div class="profile-info">
-            <h1 class="full-name" data-testid="fullName">Christopher Chukwuebuka</h1>
-            <h2 class="job-title" data-testid="jobTitle">Professional software engineer</h2>
-            <p class="short-bio" data-testid="shortBio">
-                I am a passionate front-end software engineer with a strong background in developing dynamic, userfriendly web applications and a deep understanding of modern web technologies. Proficient in HTML, CSS,
-JavaScript, and frameworks such as React, with hands-on experience in creating responsive, visually appealing,
-and fully functional user interfaces. I can collaborate within agile teams to deliver high-quality software solutions
-that align with client requirements. I possess strong problem-solving abilities, attention to detail, and a passion for
-staying updated with the latest industry trends to enhance the user experience and streamline development
-processes. I am also committed to leveraging technical skills and creativity to contribute to innovative and
-impactful web projects.
-            </p>
-            <div class="location" data-testid="currentLocation">
-                📍 Lagos, Nigeria
-            </div>
-            <div class="email" data-testid="emailAddress">
-                📧 victorchris73@gmail.com
-            </div>
-            <div class="social-links" data-testid="socialLinks">
-                <a href="https://linkedin.com/in/copstud3" target="_blank">LinkedIn</a>
-                <a href="https://github.com/copstud3" target="_blank">GitHub</a>
-                <a href="https://x.com/copstud3" target="_blank">X(fka Twitter)</a>
-            </div>
-            <div class="current-time" data-testid="currentTimeUTC">
-                Current UTC Time: Loading...
-            </div>
+
+        <a
+          href="mailto:victorchris73@gmail.com"
+          class="email"
+          data-testid="emailAddress"
+        >
+          📧 <span>victorchris73@gmail.com</span>
+        </a>
+        <div class="social-links" data-testid="socialLinks">
+          <a href="https://linkedin.com/in/copstud3" target="_blank"
+            >LinkedIn</a
+          >
+          <a href="https://github.com/copstud3" target="_blank">GitHub</a>
+          <a href="https://x.com/copstud3" target="_blank">X(fka Twitter)</a>
         </div>
+        <div class="current-time" data-testid="currentTimeUTC">
+          Current UTC Time: Loading...
+        </div>
+      </div>
     </div>
 
     <script src="/js/script.js"></script>
-</body>
+  </body>
 </html>
